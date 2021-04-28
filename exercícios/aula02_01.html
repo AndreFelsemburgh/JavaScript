@@ -1,20 +1,78 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lógica de programção com JavaScript</title>
-</head>
-<body>
-    <h1>Lógica de programação com JavaScript</h1>
-    <hr>
-    <h2>Problema:</h2>
-    <p>Solicitar ao usuário que digite seu nome e dar uma mensagem de boas-vindas.</p>
+*aula 02_01.html*
 
-    <script>
-        var nome = prompt("Qual o seu nome?");
-        alert("Seja bem vindo, " + nome);
-    </script>
-</body>
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Variáveis</title>
+    </head>
+    
+    <style>
+        body {
+            background-color: #F2E18D;
+            padding: 1.2rem;
+        }
+        
+        h1 {
+            font-size: 1.5rem;
+            color: #bfb99b;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding: 1rem;
+        }
+        
+        h2 {
+            font-size: 1.3rem;
+            color: #fb9bb9;
+            border-bottom: 3px solid #fbb99b;
+            margin-bottom: 10px;
+            display: inline-block;
+            padding: .4rem;
+        }
+        
+        pre {
+            margin-left: -120px;
+            margin-top: 0;
+        }
+        
+        .conceito {
+            font-variant: small-caps;
+            font-weight: bold;
+            color: #626262;
+            font-style: italic;
+        }
+    </style>
+    <body>
+        <h1>Lógica de programação com JavaScript</h1>
+        <hr>
+        
+        <h2>O que vamos aprender?</h2>
+        <p class="conceito">Variáveis</p>
+        
+        <h2>Problema</h2>
+        <p>Perguntar o nome do usuário e mostrar mensagem de boas-vindas.</p>
+        
+        <script>
+            //alert("Olá, Mundo!");
+            
+            //prompt("Qual o seu nome?");
+            //alert("Bem vindo!");
+            
+            var nome = prompt("Qual o seu nome?"); 
+            alert("Bem-vindo, " + nome);
+        </script>
+        
+        <h2>Solução</h2>
+        <br>
+        <code>
+            <pre>
+            
+                var nome = prompt("Qual o seu nome?");
+                alert("Bem vindo " + nome);
+            </pre>
+        </code>
+        
+    </body>
 </html>
