@@ -1,29 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lógica de programção com JavaScript</title>
-</head>
-<body>
-    <h1>Lógica de programação com JavaScript</h1>
-    <hr>
-    <h2>Problema:</h2>
-    <p>Solicitar ao usuário que digite dois números e exibir a soma deles.</p>
+ <head>
+   <title>Conversão de valoes e concatenação</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="André Felsemburgh">
+   <meta name="description" content="base">
+   <meta name="keywords" content="HTML, Css, Javascript">
 
+   <style>
+        body {
+            background-color: #F2E18D;
+            padding: 1.2rem;
+        }
+        
+        h1 {
+            font-size: 1.5rem;
+            color: #bfb99b;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding: 1rem;
+        }
+        
+        h2 {
+            font-size: 1.3rem;
+            color: #fb9bb9;
+            border-bottom: 3px solid #fbb99b;
+            margin-bottom: 10px;
+            display: inline-block;
+            padding: .4rem;
+        }
+        
+        pre {
+            margin-left: -120px;
+            margin-top: 0;
+        }
+        
+        .conceito {
+            font-variant: small-caps;
+            font-weight: bold;
+            color: #626262;
+            font-style: italic;
+        }
+
+   </style>
+ </head>
+  <body>
+      <h1>Lógica de programação com JavaScript</h1>
+        <hr>
+        
+        <h2>O que vamos aprender?</h2>
+        <p class="conceito">Conversão de valores e concatenação</p>
+        
+        <h2>Problema</h2>
+        <p>Perguntar dois números ao usuário e mostrar a soma.</p>
     <script>
-        // Solicitar o primeiro número
-        var n1 = prompt("Digite um número");
+        // Pedir para o usuário digitar um número
+        var n1 = prompt("Digite um número:");
         n1 = parseFloat(n1);
-
-        // Solicitar o segundo número
+        // Pedir para o usuário digitar outro número
         var n2 = prompt("Digite outro número");
-        n2 = parseFloat(n2);
-
-        // Exibir a soma dos dois números
-        alert("A soma entre os números " + n1 + " e " + n2 + " é: " + parseFloat(n1 + n2));
+        n2= parseFloat(n2);
+        // Mostrar a soma
+        alert("A soma entre os números " + n1 + " e " + n2 + " é: " + (n1 + n2));
+        /* Ou se for exibir apenas o rwsultado
+         alert(n1 + n2);
+        */
+        
     </script>
-
-</body>
+    
+    <h2>Solução</h2>
+    <code>
+        <pre>
+                // Pedir para o usuário digitar um número
+                var n1 = prompt("Digite um número:");
+                
+                //Converte o valor digitado para número
+                n1 = parseFloat(n1);
+                
+                // Pedir para o usuário digitar outro número
+                var n2 = prompt("Digite outro número");
+                
+                //Converte o valor digitado para número
+                n2= parseFloat(n2);
+                
+                // Mostrar a soma
+                alert("A soma entre os números " + n1 + " e " + n2 + " é: " + (n1 + n2));
+        </pre>
+    </code>
+    
+ </body>
 </html>
